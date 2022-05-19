@@ -1,0 +1,23 @@
+<h3 fundoAmarelo>Texto com fundo amarelo</h3>
+
+<button fundoAmarelo>Botão com fundo amarelo</button>
+
+<h3 highlightMouse>
+    Texto com hightlight quando passo o mouse.
+</h3>
+
+<h3 [highlight]="'red'" [defaultColor]="'gray'">
+    Texto com hightlight com cores customizadas.
+</h3>
+
+<h5>Diretiva Estrutura customizada - ngElse</h5>
+
+<div *ngIf="mostrarCursos">
+    Lista de cursos aqui.
+</div>
+<div *ngElse="mostrarCursos">
+    Não existem cursos para serem listados.
+</div>
+<br>
+
+<button (click)="onMostrarCursos()">Montrar ou esconder cursos</button>
